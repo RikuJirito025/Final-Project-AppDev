@@ -277,7 +277,7 @@ body {
   box-sizing: border-box;
 }
 
-.game-info, .time-beat, .cabernet-dlc, .cabernet-achievement {
+.game-info, .time-beat, .cabernet-dlc, .cabernet-achievement, stardew-reviews, stardew-achievement {
   width: 100%;
   box-sizing: border-box;
 }

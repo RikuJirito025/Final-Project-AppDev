@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f3e3d3;
@@ -292,6 +293,17 @@ body {
   margin-left: auto;
 }
 
+.stardew-reviews {
+  border: 2px solid #3b2c20;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  align-items: baseline;
+  gap: 6px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
 .cabernet-dlc img {
   width: 100%;
   height: 150px;
@@ -314,6 +326,17 @@ body {
   margin-left: auto;
 }
 
+.stardew-achievement {
+  border: 2px solid #3b2c20;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  align-items: center; 
+  gap: 6px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
 .cabernet-achievement img {
   width: 15%;
   height: 50px;
@@ -321,6 +344,14 @@ body {
 }
 
 .cabernet-achievement h4, p {
+    text-align: center;
+}
+
+.stardew-achievement h4, p {
+    text-align: center;
+}
+
+.stardew-reviews h4, p {
     text-align: center;
 }
 
@@ -456,8 +487,6 @@ button,
   font-size: 15px;
 }
 
-
-
 .blurred-bg {
   position: fixed;
   top: 0;
@@ -465,6 +494,20 @@ button,
   width: 100%;
   height: 100%;
   background-image: url('https://images.gog-statics.com/0b411c548fa781b3a30b4cb24e3bf21176d1e969c49d524fa429bdd2e238973b.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+  opacity: 0.9; /* You can increase/decrease this for mood */
+}
+
+.blurred-bg-stardew {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1711128146');
   background-size: cover;
   background-position: center;
   filter: blur(6px);
@@ -483,7 +526,8 @@ button,
 /* Make major titles stand out */
 h1, h2, h3, .tab-link, .product-card h2,
 .game-page h1, .game-info h4, .time-beat h4,
-.cabernet-dlc h4, .cabernet-achievement h4 {
+.cabernet-dlc h4, .cabernet-achievement h4, .stardew-reviews h4,
+.stardew-achievement h4 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -495,6 +539,8 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+
 
 .tab-link:hover,
 .product-card h2:hover {

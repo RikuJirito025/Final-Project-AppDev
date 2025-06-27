@@ -277,7 +277,7 @@ body {
   box-sizing: border-box;
 }
 
-.game-info, .time-beat, .cabernet-dlc, .cabernet-achievement, .stardew-reviews, .stardew-achievement {
+.game-info, .time-beat, .cabernet-dlc, .cabernet-achievement {
   width: 100%;
   box-sizing: border-box;
 }
@@ -498,7 +498,7 @@ button,
   background-position: center;
   filter: blur(6px);
   z-index: -1;
-  opacity: 0.9; /* You can increase/decrease this for mood */
+  opacity: 0.9;
 }
 
 .blurred-bg-stardew {
@@ -512,10 +512,24 @@ button,
   background-position: center;
   filter: blur(6px);
   z-index: -1;
-  opacity: 0.9; /* You can increase/decrease this for mood */
+  opacity: 0.9;
 }
 
-.blurred-bg::after {
+.blurred-bg-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://preview.redd.it/my-top-15-most-played-pc-games-on-steam-whats-yours-and-is-v0-qezuyx9fuwjc1.jpeg?width=1080&crop=smart&auto=webp&s=fe8c8d31fdd0b3e3eba4a4adb33743d1f1e79e85');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.blurred-bg::after, .blurred-bg-stardew::after, .blurred-bg-login::after {
   content: '';
   position: absolute;
   top: 0; left: 0;
@@ -533,7 +547,6 @@ h1, h2, h3, .tab-link, .product-card h2,
   text-transform: uppercase;
 }
 
- /* Make buttons a bit punchier */
 button {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -546,5 +559,56 @@ button {
 .product-card h2:hover {
   text-shadow: 0 0 5px #3b2c20;
   color: #5a3f2c;
+}
+
+.login-body {
+  background-color: #f3e3d3;
+  font-family: 'Raleway', sans-serif;
+}
+
+.login-container {
+  background-color: #fff1dd;
+  border: 2px solid #3b2c20;
+  padding: 40px;
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+}
+
+.login-container label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #3b2c20;
+  background-color: #fff;
+}
+
+.login-container button {
+  background-color: #e3c59f;
+  color: #3b2c20;
+  border: 2px solid #3b2c20;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-link {
+  margin-top: 15px;
 }
 

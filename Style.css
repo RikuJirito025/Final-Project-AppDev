@@ -265,6 +265,7 @@ body {
   width: 20%;
   height: 160px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .recommendation .img2 img{
@@ -272,6 +273,7 @@ body {
   width: 31%;
   height: 120px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .description-image {

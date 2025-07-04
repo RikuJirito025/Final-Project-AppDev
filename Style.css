@@ -619,6 +619,7 @@ button {
 .login-body {
   background-color: #f3e3d3;
   font-family: 'Raleway', sans-serif;
+
 }
 
 .login-container {
@@ -651,6 +652,7 @@ button {
   margin-bottom: 15px;
   border: 2px solid #3b2c20;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .login-container button {
@@ -660,7 +662,7 @@ button {
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
 }
 
 .signup-link {
